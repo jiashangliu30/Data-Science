@@ -28,3 +28,20 @@ This dataset is not cleaning heavy as there aren't many instances and features. 
 Looking at data for patterns and comprehend the data before any training happens to get a deeper layer of understanding of the data or the feature fed in to the model.
 
 In this case, we will investigate how each feature relates to the house prices and set an assuption before the training and prediction happens
+
+- Transaction Date Vs Price
+
+![image](https://user-images.githubusercontent.com/77212888/122659403-f3503280-d145-11eb-9a61-d8b7ff5c2d13.png)
+
+- House Age Vs Price
+
+![image](https://user-images.githubusercontent.com/77212888/122659421-137ff180-d146-11eb-9988-f77cbb38e994.png)
+
+- Distance to MRT station Vs Price
+
+![image](https://user-images.githubusercontent.com/77212888/122659462-796c7900-d146-11eb-9472-852ff243c523.png)
+
+- Number of Convienience Stores Vs Price
+
+![image](https://user-images.githubusercontent.com/77212888/122659477-91dc9380-d146-11eb-9edf-f307571cea83.png)
+
