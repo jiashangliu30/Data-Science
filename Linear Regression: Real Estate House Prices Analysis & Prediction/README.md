@@ -45,3 +45,7 @@ In this case, we will investigate how each feature relates to the house prices a
 
 ![image](https://user-images.githubusercontent.com/77212888/122659477-91dc9380-d146-11eb-9edf-f307571cea83.png)
 
+## 5. Result & Conclusion
+
+The Metrics for regression models r2 score, in another word "Coefficient of determination", it measure how good y_pred fit with y_test
+where accuracy is not suitable for any regression problems.
