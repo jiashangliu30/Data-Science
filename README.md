@@ -16,6 +16,6 @@ The detailed category and project directory is listed below:
 <br>
 
 1. [Product Analysis](https://github.com/jiashangliu30/Product-Analysis)
-2. [Tableau Projects](https://public.tableau.com/app/profile/jiashang.liu/viz/project5LanduseintheUS/Dashboard1)
+2. [Tableau Projects](https://public.tableau.com/app/profile/jiashang.liu)
 
 </details>
