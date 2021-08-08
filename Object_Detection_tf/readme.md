@@ -1,6 +1,10 @@
 # Product listing Auto filler using Object Detection
 
-<img src="https://user-images.githubusercontent.com/77212888/128608971-e4af1c9f-2a8b-49ab-b2ab-40fb1bd4cada.gif" width="50%" height="50%">
+
+Product                    |  Listing 
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/77212888/128608971-e4af1c9f-2a8b-49ab-b2ab-40fb1bd4cada.gif">    |  ![image](https://user-images.githubusercontent.com/77212888/128619886-b6b9b0e5-3d7e-4055-9791-cea020554fa1.png)
+
 
 ## Problem
 Object Detection can be used for a variety of purposes. To name a few, video editing, face recognition, and health care. They have all been taking advantage of the technology. It can also be used to be implemented to improve user experience.
@@ -31,7 +35,7 @@ The classes are:
 - Wallet
 - Keyboard
 - Mouse
-![image](https://user-images.githubusercontent.com/77212888/128619353-ac107077-51b8-41bc-85c8-f0b8729c4c66.png)
+<img src="https://user-images.githubusercontent.com/77212888/128619353-ac107077-51b8-41bc-85c8-f0b8729c4c66.png" width="75%" height="75%">
 
 ## Evaluation Results on PASCAL VOC 2007
 The experiment results were compared to the TensorFlow 2 Model Zoo. In table 1, the model was organized by the fastest speed to the slowest speed. It was clear that higher inference time has a higher COCO mAP. However, it was not the case for CenterNet HourClass104 512x512. It has a somewhat acceptable inference time but the highest accuracy. This was why the CenterNet was included in the experiment.
@@ -44,12 +48,11 @@ In table 2, it was interesting that SSD ResNet50 had an overall much higher mAP 
 For this project, it is more important to have a higher mAP and AR score than a higher speed for detecting. For instance, a self-driving car would need a lower inference time because it requires real-time detection. This project is designed for detecting objects in the listing phase for online markets to extract information from the product, and then auto-fill for the seller. The speed difference of milliseconds would not make a big difference in the user experience. It is more important for the model to identify the product and be able to show it to the user. Therefore, the best-fitted model architecture would be CenterNet HourGlass104. It achieved 61.5 in mAP@0.5(often used as a pascal VOC metric) and 40.2 in mAP. Moreover, the AR performance is 63.8.
 
 ## Predictions on PASCAL VOC 2007
-![image](https://user-images.githubusercontent.com/77212888/128619549-ed382842-e1c1-44ef-817b-b4e8e824c7a8.png)
+<img src="https://user-images.githubusercontent.com/77212888/128619549-ed382842-e1c1-44ef-817b-b4e8e824c7a8.png" width="75%" height="75%">
 
 First, we look at how the model performed against its own evaluation dataset. In figure 1, it identifies the person in the back with a precise bounding box. However, the person in front of him was not detected. We assume that objects in the back or smaller are harder to detect, however the evaluation result contradicts our assumption. The reason could be the person in the front only shows ¼ of his body with a unique pose.
 
-![image](https://user-images.githubusercontent.com/77212888/128619559-6740c26a-3b5f-47fa-8695-5270086e1f7c.png)
-
+<img src="https://user-images.githubusercontent.com/77212888/128619559-6740c26a-3b5f-47fa-8695-5270086e1f7c.png" width="75%" height="75%">
 
 Subsequently, we use photos that are collected from the internet, which were never seen by the model to test its performance. As results shown in figure 2, the buses were detected with a precise bounding box, even the bus on the left with fewer features were detected. Moreover, the couch was detected with a good bounding box position.
 
@@ -66,14 +69,15 @@ For further improvement of the model, more annotated data are needed to identify
 
 In figure 3, the men’s wallet was successfully detected with a precise bounding box. However, the edge of the keyboard on the right was not detected. While objects from other categories are being detected as well, the position and lighting need to be similar enough in order for the machine to reorganize the object, which is due to the insufficient instances and fewer training steps.
 
-![image](https://user-images.githubusercontent.com/77212888/128619607-dfbffde6-a13a-4f18-9fac-4d22f600cb5a.png)
+<img src="https://user-images.githubusercontent.com/77212888/128619607-dfbffde6-a13a-4f18-9fac-4d22f600cb5a.png" width="50%" height="50%">
 
 In further steps of this project to be deployed on the online marketplace application, the product images that are already in the database can be leveraged along with the images that are already classified by the users as a part of the information for their product when listing. The only requirement is to annotate the bounding box for training. Plenty of APIs to really connect the link between the model and the application should also be considered as the next crucial step. Moreover, scripts on getting the product information from the database and calculating the recommended price (it can be a regression problem) or average price should also be considered in the development process. 
 
 To summarize, we have obtained the proof of concept for the further development of the object detection mode, where it detects the object with precise bounding boxes even with minimum data points and minimum training. Leveraging the online marketplace application database and increasing training will strengthen the model. Furthermore, with the speed and mAP trade-off, we concluded that the CenterNet HourGlass104 has the best result with good speed.
 
 
+Initial Performance        |  Improved Performance 
+:-------------------------:|:-------------------------:
+![ckpt-1 (1)](https://user-images.githubusercontent.com/77212888/128609076-dd7ff9a6-4470-4a12-bc3a-42c59075c1b4.gif)    |  ![ckpt-3](https://user-images.githubusercontent.com/77212888/128608971-e4af1c9f-2a8b-49ab-b2ab-40fb1bd4cada.gif)
 
-![ckpt-3](https://user-images.githubusercontent.com/77212888/128608971-e4af1c9f-2a8b-49ab-b2ab-40fb1bd4cada.gif)
-![ckpt-1 (1)](https://user-images.githubusercontent.com/77212888/128609076-dd7ff9a6-4470-4a12-bc3a-42c59075c1b4.gif)
 
