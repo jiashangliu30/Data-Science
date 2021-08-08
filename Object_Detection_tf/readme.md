@@ -1,4 +1,4 @@
-# Product listing Auto filler using Object Detection
+# Product Listing Auto Filler using Object Detection
 
 
 Product                    |  Listing 
