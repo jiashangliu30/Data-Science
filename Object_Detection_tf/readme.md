@@ -9,7 +9,7 @@ Product                    |  Listing
 ## Problem
 Object Detection can be used for a variety of purposes. To name a few, video editing, face recognition, and health care. They have all been taking advantage of the technology. It can also be used to be implemented to improve user experience.
 
-The foundation of the inspiration came from online marketplaces such as eBay. One of the group members had also worked on a similar application and received user feedback. A very common voice in the feedback was, the listing process can be cumbersome, including taking pictures, setting a price, and type product information, descriptions. Furthermore, it makes users discouraged to list more products, even though it could lead to more profits. What is a feature that could be implemented that could address the feedback and improve user experience? 
+The foundation of the inspiration came from online marketplaces such as eBay. I had also worked on a similar application and received user feedback. A very common voice in the feedback was, the listing process can be cumbersome, including taking pictures, setting a price, and type product information, descriptions. Furthermore, it makes users discouraged to list more products, even though it could lead to more profits. What is a feature that could be implemented that could address the feedback and improve user experience? 
 
 The project idea is to take advantage of object detection during the picture-taking, or uploading stage to identify the product, and subsequently, automatically fill out the basic information as well as the advised selling price or average selling price. This feature would make the seller’s listing process simpler. 
 
