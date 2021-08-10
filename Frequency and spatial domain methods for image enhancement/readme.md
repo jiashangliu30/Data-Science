@@ -5,7 +5,7 @@ Photos are often capture on camera as appeared distorted or in low quality. In t
 You solution strategy is application of the Discrete Fourier Transform and figuring out an appropriate filter in the frequency domain for periodic noise suppression. You will then perform post-processing techniques to further improve image contrast.¶
 
 
-![car](https://user-images.githubusercontent.com/77212888/127365062-c3426285-0a3b-4801-8102-e018240bc437.png)
+<img src="https://user-images.githubusercontent.com/77212888/127365062-c3426285-0a3b-4801-8102-e018240bc437.png" width="75%" height="75%">
 ## process
 
 1. Calculate the Discrete Fourier transform of a car image, shift the origin of the image domain to the centre, and calculate the magnitude of the Fourier transform
